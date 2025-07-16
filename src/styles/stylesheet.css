@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
 @import "tailwindcss";
 
 html {
@@ -9,7 +10,27 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
-  background-color: black;
-  color: #cbd5e1; /* slate-200 */
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  background: linear-gradient(135deg, #111827 0%, #1F2937 50%, #111827 100%);
+  background-attachment: fixed;
+  color: #F9FAFB;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06B6D4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0891B2;
 }
