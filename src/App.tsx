@@ -1,15 +1,14 @@
-import './styles/stylesheet.css'
+import "./styles/stylesheet.css";
+import ConstructionMessage from "./components/layout/ConstructionMessage";
+import BaseCard from "./components/layout/BaseCard";
 
 function App() {
-
   return (
     <>
-      <div>
-        <h1 className="text-red-600 font-extrabold text-center mt-5">my personal portfolio wow</h1>
-        <p className='italic text-center'>Currently under construction, I'm cool so this site will be cool</p>
-      </div>
+      <ConstructionMessage />
+      <BaseCard />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
