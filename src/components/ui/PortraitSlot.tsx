@@ -5,7 +5,7 @@ export default function PortraitSlot(): React.ReactElement {
     <>
       {/* Image size in px is 438 by 555 */}
       {/* Portrait image section */}
-      <div className="relative w-1/3 h-[95%] flex-shrink-0">
+      <div className="relative lg:w-1/3 lg:h-[95%] h-[300px] w-[220px] flex-shrink-0">
         <div className="relative w-full h-full bg-gradient-to-b from-gray-700 to-gray-900 border-2 border-cyan-400/70 overflow-hidden">
           {/* Placeholder for image */}
           <img
