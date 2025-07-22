@@ -4,7 +4,7 @@ export default function TerminalSlot(): React.ReactElement {
   return (
     <>
       {/* Terminal with a summary about me - takes up most of the space */}
-      <div className="flex-1 flex flex-col justify-start space-y-4 bg-gray-900 border-2 border-cyan-400/70 p-4 m-2">
+      <div className="flex-1 flex flex-col justify-start space-y-4 bg-gray-900 rounded-b-lg lg:rounded-b-none lg:rounded-br-lg p-2">
         <p className="text-[#7FFF00] text-sm font-mono leading-relaxed">
           <span className="text-green-400 text-sm font-mono leading-relaxed">
             austin
