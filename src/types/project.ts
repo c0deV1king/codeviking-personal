@@ -4,6 +4,7 @@ export interface ProjectItemProps {
   technologies: string[];
   repo: string;
   live: string;
+  sceneComponent?: React.ComponentType;
 }
 
 export interface Project {
@@ -12,4 +13,5 @@ export interface Project {
   technologies: string[];
   repo?: string;
   live?: string;
+  sceneComponent?: React.ComponentType;
 }

@@ -7,30 +7,24 @@ export function ProjectBlock({
   technologies,
   repo,
   live,
+  sceneComponent: SceneComponent,
 }: ProjectItemProps): React.ReactElement {
   return (
-    <li className="rounded-lg p-2">
-      <div className="flex items-center flex-row w-full">
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          className="ml-2 w-8 h-8 min-w-8 min-h-8 transition-colors duration-300 flex-shrink-0 text-black drop-shadow-lg"
-        >
-          <path
-            d="M7 4 L15 10 L7 16"
-            stroke="currentColor"
-            strokeWidth="2"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+    <li className="rounded-lg">
+      <div className="flex items-start flex-row w-full">
+        {/* Three.js canvas location */}
+        <div className="w-36 h-36 flex-shrink-0">
+          {SceneComponent ? (
+            <SceneComponent />
+          ) : (
+            <div className="w-full h-full bg-black" />
+          )}
+        </div>
         <div className="flex flex-col ml-4 flex-1 min-w-0">
-          <h3 className="text-xl font-semibold break-words text-black bg-clip-text">
+          <h3 className="text-md font-normal break-words text-red-800 bg-clip-text">
             {title}
           </h3>
-          <p className="text-black break-words leading-relaxed">
+          <p className="text-black break-words leading-relaxed font-extralight text-sm">
             {description}
           </p>
           <div className="mt-2 flex flex-col md:flex-row ">
@@ -38,7 +32,7 @@ export function ProjectBlock({
               {technologies.map((tech: string, index: number) => (
                 <li
                   key={index}
-                  className="list-none bg-black rounded-full px-1 py-1 text-white w-fit shadow-md hover:shadow-cyan-500/50 transition-shadow duration-300"
+                  className="list-none bg-black rounded-full px-1 py-1 text-white w-fit shadow-sm"
                 >
                   {tech}
                 </li>
@@ -48,7 +42,7 @@ export function ProjectBlock({
           <div className="mt-2 flex flex-row gap-2">
             <a
               href={repo}
-              className="text-cyan-400 bg-black px-2 py-1 border border-cyan-400 hover:text-white transition-colors duration-300 hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-blue-500/20 hover:border-cyan-300"
+              className="text-black bg-transparent px-1 py-1 border border-black rounded-full hover:text-yellow-600 transition-colors duration-300 hover:border-yellow-600"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -56,7 +50,7 @@ export function ProjectBlock({
             </a>
             <a
               href={live}
-              className="text-cyan-400 bg-black px-2 py-1 border border-cyan-400 hover:text-white transition-colors duration-300 hover:bg-gradient-to-r hover:from-cyan-500/20 hover:to-blue-500/20 hover:border-cyan-300"
+              className="text-black bg-transparent px-1 py-1 border border-black rounded-full hover:text-yellow-600 transition-colors duration-300 hover:border-yellow-600"
               target="_blank"
               rel="noopener noreferrer"
             >
