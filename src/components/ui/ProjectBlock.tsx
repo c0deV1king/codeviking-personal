@@ -28,11 +28,11 @@ export function ProjectBlock({
             {description}
           </p>
           <div className="mt-2 flex flex-col md:flex-row ">
-            <ul className="flex md:flex-row flex-col gap-2 text-xs text-black">
+            <ul className="flex md:flex-row flex-wrap flex-col gap-2 text-xs text-black">
               {technologies.map((tech: string, index: number) => (
                 <li
                   key={index}
-                  className="list-none bg-black rounded-full px-1 py-1 text-white w-fit shadow-sm"
+                  className="list-none bg-black rounded-full px-1 text-white w-fit shadow-sm"
                 >
                   {tech}
                 </li>
