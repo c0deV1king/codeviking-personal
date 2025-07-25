@@ -1,16 +1,24 @@
 import React from "react";
+import { blogs } from "../../data/blogs";
+import { BlogBlock } from "../ui/BlogBlock";
 
 export default function Blogs(): React.ReactElement {
   return (
-    <div className="flex justify-center">
-      <div className="flex flex-col items-center justify-center mt-4 w-[50%]">
-        <h2 className="text-2xl font-light mb-4 self-center sm:self-start text-black">
-          Blogs
-        </h2>
-        <p className="text-black font-extralight text-sm">
-          This section will contain blogs in the future. Stay tuned!
-        </p>
+    <>
+      <div className="flex justify-center mt-8 mb-8">
+        <div className="flex flex-col p-0 w-[100%] sm:w-[50%]">
+          <ul className="space-y-4">
+            {blogs.map((blog, index) => (
+              <BlogBlock
+                key={index}
+                title={blog.title}
+                tags={blog.tags}
+                date={blog.date}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
