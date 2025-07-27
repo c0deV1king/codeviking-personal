@@ -9,14 +9,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "start": "serve dist -s -n -L -p $PORT",
+    "start": "sirv dist --host 0.0.0.0 --port $PORT --single",
     "lint": "eslint .",
     "astro": "astro"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.3",
-    "serve": "^14.2.1",
+    "sirv-cli": "^3.0.1",
     "three": "^0.178.0"
   },
   "devDependencies": {
