@@ -9,7 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "start": "astro preview --host 0.0.0.0 --port $PORT",
+    "start": "serve dist -s -n -L -p $PORT",
     "lint": "eslint .",
     "astro": "astro"
   },
