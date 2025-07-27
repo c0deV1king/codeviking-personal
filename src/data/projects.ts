@@ -1,6 +1,4 @@
 import { type Project } from "../types/project";
-import { RocketExplorerScene } from "../scenes/RocketExplorerScene";
-import { SteamTrackerScene } from "../scenes/SteamTrackerScene";
 
 export const projects: Project[] = [
   {
@@ -10,7 +8,7 @@ export const projects: Project[] = [
     technologies: ["JavaScript", "HTML", "CSS"],
     repo: "https://github.com/c0deV1king/rocket-explorer",
     live: "https://c0dev1king.github.io/rocket-explorer/",
-    sceneComponent: RocketExplorerScene,
+    sceneComponent: null,
   },
   {
     title: "Steam Tracker Frontend",
@@ -19,7 +17,7 @@ export const projects: Project[] = [
     technologies: ["React", "JavaScript", "Tailwind"],
     repo: "https://github.com/c0deV1king/Steam-Tracker-Demo",
     live: "https://steam-tracker.codeviking.io/",
-    sceneComponent: SteamTrackerScene,
+    sceneComponent: null,
   },
   {
     title: "Steam Tracker Backend",

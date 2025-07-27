@@ -1,0 +1,42 @@
+---
+const { frontmatter } = Astro.props;
+const { title, date, tags } = frontmatter;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <article class="mx-auto my-8">
+      <header class="flex justify-center items-center mb-10">
+        <a href="/">← return</a>
+      </header>
+      <main class="flex flex-col items-center mx-2">
+        <div class="flex flex-col justify-center w-full sm:w-1/2">
+          <div
+            class="text-3xl text-red-800 font-medium self-center sm:self-start"
+          >
+            {title}
+          </div>
+          <div class="text-gray-500 self-center sm:self-start">{date}</div>
+          <div class="mb-8 self-center sm:self-start">
+            {
+              tags &&
+                tags.map((tag: unknown) => (
+                  <span class="inline-block bg-white text-yellow-600 px-1 rounded mr-2 text-xs">
+                    {tag}
+                  </span>
+                ))
+            }
+          </div>
+          <slot />
+        </div>
+      </main>
+    </article>
+  </body>
+</html>

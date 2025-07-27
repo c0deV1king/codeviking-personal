@@ -5,10 +5,12 @@ export const blogs: Blog[] = [
     title: "Second blog post",
     tags: "blog, project, react",
     date: "08-15-2025",
+    slug: "second-blog-post",
   },
   {
     title: "Tester Blog",
     tags: "test, blog, project",
     date: "07-25-2025",
+    slug: "tester-blog",
   },
 ];

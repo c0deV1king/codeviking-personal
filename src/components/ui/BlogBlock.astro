@@ -1,0 +1,14 @@
+---
+export interface Props {
+  title: string;
+  tags: string;
+  date: string;
+  slug: string;
+}
+const { title, tags, date, slug } = Astro.props;
+---
+<div class="flex items-center flex-col">
+  <h3 class="text-xl text-black font-semibold hover:text-red-800 cursor-pointer"><a href=`/blog/${slug}`> {title} </a></h3>
+  <p class="text-yellow-600">{tags}</p>
+  <p class="text-gray-400 text-sm">{date}</p>
+</div>

@@ -1,0 +1,53 @@
+---
+// Astro frontmatter: define props
+export interface Props {
+  title: string;
+  description: string;
+  technologies: string[];
+  repo: string;
+  live: string;
+}
+const { title, description, technologies, repo, live } = Astro.props;
+---
+
+<li class="rounded-lg">
+  <div class="flex items-center sm:items-start flex-col sm:flex-row w-full">
+    <!-- Three.js canvas location (placeholder only) -->
+    <div class="w-36 h-36 flex-shrink-0">
+      <div class="w-full h-full bg-black"></div>
+    </div>
+    <div class="flex flex-col ml-4 flex-1 min-w-0">
+      <h3 class="text-md font-normal break-words text-red-800 bg-clip-text">
+        {title}
+      </h3>
+      <p class="text-black break-words leading-relaxed font-extralight text-sm">
+        {description}
+      </p>
+      <div class="mt-2 flex flex-col md:flex-row">
+        <ul class="flex flex-row flex-wrap gap-2 text-xs text-black">
+          {
+            technologies.map((tech) => (
+              <li class="list-none bg-black rounded-full px-1 text-white w-fit shadow-sm">
+                {tech}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="mt-2 flex flex-row gap-2">
+        <a
+          href={repo}
+          class="text-black bg-transparent px-1 py-1 border border-black rounded-full hover:text-yellow-600 transition-colors duration-300 hover:border-yellow-600"
+          target="_blank"
+          rel="noopener noreferrer">Repo</a
+        >
+        <a
+          href={live}
+          class="text-black bg-transparent px-1 py-1 border border-black rounded-full hover:text-yellow-600 transition-colors duration-300 hover:border-yellow-600"
+          target="_blank"
+          rel="noopener noreferrer">Live Link</a
+        >
+      </div>
+    </div>
+  </div>
+</li>
