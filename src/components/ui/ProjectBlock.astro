@@ -6,9 +6,12 @@ export interface Props {
   technologies: string[];
   repo: string;
   live: string;
+  sceneId?: string;
 }
-const { title, description, technologies, repo, live } = Astro.props;
+const { title, description, technologies, repo, live, sceneId } = Astro.props;
+// Scene component imports
 import ThreeSceneOne from "../scenes/ThreeSceneOne.astro";
+import SteamTrackerScene from "../scenes/SteamTrackerScene.astro";
 ---
 
 <li class="rounded-lg">
@@ -16,7 +19,8 @@ import ThreeSceneOne from "../scenes/ThreeSceneOne.astro";
     <!-- Three.js canvas location (placeholder only) -->
     <div class="w-36 h-36 flex-shrink-0">
       <div class="w-full h-full">
-        <ThreeSceneOne />
+        {sceneId === "rocket-explorer" && <ThreeSceneOne />}
+        {sceneId === "steam-tracker-frontend" && <SteamTrackerScene />}
       </div>
     </div>
     <div class="flex flex-col ml-4 flex-1 min-w-0">

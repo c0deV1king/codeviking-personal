@@ -2,19 +2,25 @@
 import ProjectBlock from "../ui/ProjectBlock.astro";
 import { projects } from "../../data/projects";
 ---
+
 <div class="flex justify-center">
   <div class="flex flex-col p-0 w-[100%] sm:w-[50%]">
-    <h2 class="text-2xl font-light text-black self-center sm:self-start mb-4">Projects</h2>
+    <h2 class="text-2xl font-light text-black self-center sm:self-start mb-4">
+      Projects
+    </h2>
     <ul class="space-y-4">
-      {projects.map((project) => (
-        <ProjectBlock
-          title={project.title}
-          description={project.description}
-          technologies={project.technologies}
-          repo={project.repo || ""}
-          live={project.live || ""}
-        />
-      ))}
+      {
+        projects.map((project) => (
+          <ProjectBlock
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            repo={project.repo || ""}
+            live={project.live || ""}
+            sceneId={project.sceneId || ""}
+          />
+        ))
+      }
     </ul>
   </div>
 </div>

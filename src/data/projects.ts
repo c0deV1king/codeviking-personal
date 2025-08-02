@@ -8,7 +8,7 @@ export const projects: Project[] = [
     technologies: ["JavaScript", "HTML", "CSS"],
     repo: "https://github.com/c0deV1king/rocket-explorer",
     live: "https://c0dev1king.github.io/rocket-explorer/",
-    sceneComponent: null,
+    sceneId: "rocket-explorer",
   },
   {
     title: "Steam Tracker Frontend",
@@ -17,7 +17,7 @@ export const projects: Project[] = [
     technologies: ["React", "JavaScript", "Tailwind"],
     repo: "https://github.com/c0deV1king/Steam-Tracker-Demo",
     live: "https://steam-tracker.codeviking.io/",
-    sceneComponent: null,
+    sceneId: "steam-tracker-frontend",
   },
   {
     title: "Steam Tracker Backend",
@@ -34,5 +34,6 @@ export const projects: Project[] = [
     ],
     repo: "https://github.com/c0deV1king/Steam-Tracker-Backend",
     live: "https://steam-tracker.codeviking.io/",
+    sceneId: "steam-tracker-backend",
   },
 ];

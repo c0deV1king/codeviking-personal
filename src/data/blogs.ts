@@ -2,15 +2,15 @@ import { type Blog } from "../types/blog";
 
 export const blogs: Blog[] = [
   {
-    title: "Second blog post",
-    tags: "blog, project, react",
-    date: "08-15-2025",
-    slug: "second-blog-post",
+    title: "steam tracker: breakdown (wip)",
+    tags: "project, react, typescript, tailwind, express",
+    date: "08-02-2025",
+    slug: "project-steam-tracker",
   },
   {
-    title: "Tester Blog",
-    tags: "test, blog, project",
-    date: "07-25-2025",
-    slug: "tester-blog",
+    title: "rocket explorer: breakdown (wip)",
+    tags: "project, javascript, html, css",
+    date: "08-02-2025",
+    slug: "project-rocket-explorer",
   },
 ];
