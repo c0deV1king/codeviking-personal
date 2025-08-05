@@ -8,7 +8,7 @@ export const blogs: Blog[] = [
     slug: "project-steam-tracker",
   },
   {
-    title: "rocket explorer: breakdown (wip)",
+    title: "rocket explorer: breakdown",
     tags: "project, javascript, html, css",
     date: "08-02-2025",
     slug: "project-rocket-explorer",

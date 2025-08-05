@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap");
 
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.prose {
+  line-height: 1.4;
 }
 
 body {
