@@ -16,7 +16,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.12.3",
+    "astro": "^5.12.8",
     "sirv-cli": "^3.0.1",
     "three": "^0.178.0"
   },
