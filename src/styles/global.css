@@ -25,7 +25,7 @@ body {
   padding: 0;
   font-family: "Ubuntu Sans Mono", monospace;
   /* background: linear-gradient(135deg, #111827 0%, #1F2937 50%, #111827 100%); */
-  background-color: var(--color-deep-forest-green);
+  background-color: gray;
   color: var(--color-forest-floor-brown);
   background-attachment: fixed;
   overflow-x: hidden;
