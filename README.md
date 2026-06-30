@@ -1,1 +1,1 @@
-Welcome to my personal site made with astro
+my personal hobby site
