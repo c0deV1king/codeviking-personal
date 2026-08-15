@@ -1,7 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Modern+Antiqua&display=swap");
 
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@font-face {
+  font-family: 'Malevolent';
+  src: url('src/fonts/MalevolentFreeRegular-q2o61.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.modern-antiqua-regular {
+  font-family: "Modern Antiqua", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 html {
   margin: 0;
@@ -14,18 +28,18 @@ html {
 }
 
 :root {
-  --color-deep-forest-green: #A47251;
-  --color-forest-green: #DD9E59;
-  --color-forest-floor-brown: #F0D8A1;
-  --color-sandy: #DCF0C3;
+  --color-deep-forest-green: #553B08;
+  --color-forest-green: #553B08;
+  --color-forest-floor-brown: #553B08;
+  --color-sandy: #553B08;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu Sans Mono", monospace;
+  font-family: "Modern Antiqua", serif;
   /* background: linear-gradient(135deg, #111827 0%, #1F2937 50%, #111827 100%); */
-  background-color: gray;
+  background-color: #E9E5CD;
   color: var(--color-forest-floor-brown);
   background-attachment: fixed;
   overflow-x: hidden;
@@ -33,6 +47,7 @@ body {
 
 p {
   color: var(--color-forest-floor-brown);
+  font-family: "Modern Antiqua", serif;
 }
 a {
   color: var(--color-sandy);
@@ -42,11 +57,21 @@ a:hover {
   color: var(--color-forest-green);
 }
 h3 {
+    color: var(--color-forest-floor-brown);
+    font-family: "Malevolent", sans-serif;
+}
+h1 {
   color: var(--color-forest-floor-brown);
+  font-family: "Malevolent", sans-serif;
+}
+h2 {
+  color: var(--color-forest-floor-brown);
+  font-family: "Malevolent", sans-serif;
 }
 
 li {
   color: var(--color-forest-floor-brown);
+  font-family: "Modern Antiqua", serif;
 }
 /* Custom scrollbar */
 ::-webkit-scrollbar {

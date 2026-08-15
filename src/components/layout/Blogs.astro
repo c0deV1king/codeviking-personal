@@ -3,10 +3,10 @@ import { blogs } from "../../data/blogs";
 import BlogBlock from "../ui/BlogBlock.astro";
 ---
 
-<div class="flex justify-start mt-1 mb-8">
+<div class="flex justify-center mt-1 mb-8">
   <div class="flex flex-col p-0 w-[100%] sm:w-[50%]">
-    <h2 class="text-2xl font-bold italic self-center sm:self-start">things and stuff</h2>
-    <ul class="space-y-4 self-start">
+    <p class="text-2xl font-bold italic self-center sm:self-center">things and stuff</p>
+    <ul class="space-y-4 self-center">
       {
         blogs.map((blog) => (
           <BlogBlock
@@ -19,4 +19,3 @@ import BlogBlock from "../ui/BlogBlock.astro";
     </ul>
   </div>
 </div>
-<p class="font-light"> -- break -- </p>
