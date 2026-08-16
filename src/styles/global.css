@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Malevolent';
-  src: url('src/fonts/MalevolentFreeRegular-q2o61.otf') format('opentype');
+  src: url('public/fonts/MalevolentFreeRegular-q2o61.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
