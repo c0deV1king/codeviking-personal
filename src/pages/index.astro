@@ -1,7 +1,5 @@
 ---
 import Header from "../components/layout/Header.astro";
-import Blogs from "../components/layout/Blogs.astro";
-import Links from "../components/layout/Links.astro";
 import Footer from "../components/layout/Footer.astro";
 import "../styles/global.css";
 ---
@@ -18,8 +16,14 @@ import "../styles/global.css";
     <main class="flex flex-col items-center w-full px-4 py-8">
       <div class="w-full mx-auto flex flex-col">
         <Header />
-        <Blogs />
-        <Links />
+        <div class="flex flex-row w-full justify-center gap-4 mt-8">
+          <button class="bg-transparent hover:bg-[#e8871f] text-white border border-[#553B08] font-bold py-2 px-4 rounded">
+            <a href="/blogs">Blogs</a>
+          </button>
+          <button class="bg-transparent hover:bg-[#e8871f] text-white border border-[#553B08] font-bold py-2 px-4 rounded">
+            <a href="/links">Links</a>
+          </button>
+        </div>
       </div>
       <Footer />
     </main>
